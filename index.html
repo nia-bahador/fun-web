@@ -1,0 +1,21 @@
+</head>
+<body>
+        <h3>Get Device Info Like OS and Screen Size.</h3>
+        <p id="GetInfo"></p>
+        <script>
+                var txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+                txt+= "<p>Browser Name: " + navigator.appName + "</p>";
+                txt+= "<p>Browser Version: " + navigator.appVersion + "</p>";
+                txt+= "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+                txt+= "<p>Platform: " + navigator.platform + "</p>";
+                txt+= "<p>User-agent header: " + navigator.userAgent + "</p>";
+                document.getElementById("GetInfo").innerHTML=txt;
+        </script>
+        <p id="GetDisplayInfo"></p>
+        <script>
+                var w = window.innerWidth;
+                var h = window.innerHeight;
+                document.getElementById("GetDisplayInfo").innerHTML = "Browser width: " + w + ", height: " + h + ".";
+        </script>
+</body>
+</html>
